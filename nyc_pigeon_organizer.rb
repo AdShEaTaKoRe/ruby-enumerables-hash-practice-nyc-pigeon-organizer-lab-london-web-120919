@@ -7,7 +7,7 @@ def nyc_pigeon_organizer(data)
         :color => ,
         :gender => [k],
         :lives => data[:color].reduce([]) { | memo, (color_k,color_v)|
-          
+          if color_v.any? { |name| }
         }
       }
     }
