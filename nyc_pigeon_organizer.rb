@@ -6,7 +6,9 @@ def nyc_pigeon_organizer(data)
       result[pigeon_name] = {
         :color => ,
         :gender => [k],
-        :lives => data[:color].find
+        :lives => data[:color].reduce([]) { | memo, (color_k,color_v)|
+          
+        }
       }
     }
     
