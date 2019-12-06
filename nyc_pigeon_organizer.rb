@@ -14,10 +14,10 @@ def nyc_pigeon_organizer(data)
   }
 end
 
-def get_keys_if_in_array(name, obj)
-  data[:lives].reduce([]) { | memo, (lives_k,lives_v)|
-    if lives_v.any? { |name| pigeon_name == name}
-      memo << color_k
+def get_keys_if_in_array(desired_name, obj)
+  obj.reduce([]) { |memo, (k,v)|
+    if v.any? { |name| desired_name == name}
+      memo << k
     end
     
     memo
