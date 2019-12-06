@@ -17,7 +17,7 @@ end
 def get_keys_if_in_array(desired_name, obj)
   obj.reduce([]) { |memo, (k,v)|
     if v.any? { |name| desired_name == name}
-      memo << k
+      memo << k.to_s
     end
     
     memo
