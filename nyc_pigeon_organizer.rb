@@ -5,7 +5,7 @@ def nyc_pigeon_organizer(data)
     pigeon_names.each { |pigeon_name|
       result[pigeon_name] = {
         :color => get_keys_if_in_array(pigeon_name, data[:color]),
-        :gender => [k],
+        :gender => [k.to_s],
         :lives => get_keys_if_in_array(pigeon_name, data[:lives])
       }
     }
