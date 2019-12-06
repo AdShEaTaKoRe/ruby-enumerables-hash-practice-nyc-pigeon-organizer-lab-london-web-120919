@@ -6,16 +6,20 @@ def nyc_pigeon_organizer(data)
       result[pigeon_name] = {
         :color => ,
         :gender => [k],
-        :lives => data[:lives].reduce([]) { | memo, (color_k,color_v)|
-          if color_v.any? { |name| pigeon_name == name}
-            memo << color_k
-          end
-          
-          memo
-        }
+        :lives => 
       }
     }
     
     result
+  }
+end
+
+def get_keys_if_in_array(name, obj)
+  data[:lives].reduce([]) { | memo, (lives_k,lives_v)|
+    if lives_v.any? { |name| pigeon_name == name}
+      memo << color_k
+    end
+    
+    memo
   }
 end
