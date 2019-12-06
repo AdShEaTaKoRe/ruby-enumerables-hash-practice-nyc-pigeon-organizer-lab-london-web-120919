@@ -6,7 +6,7 @@ def nyc_pigeon_organizer(data)
       result[pigeon_name] = {
         :color => ,
         :gender => [k],
-        :lives => data[:color].reduce([]) { | memo, (color_k,color_v)|
+        :lives => data[:lives].reduce([]) { | memo, (color_k,color_v)|
           if color_v.any? { |name| pigeon_name == name}
             memo << color_k
           end
