@@ -5,7 +5,7 @@ def nyc_pigeon_organizer(data)
     pigeon_names.each { |pigeon_name|
       result[pigeon_name] = {
         :color => ,
-        :gender => [],
+        :gender => [k],
         :lives =>
       }
     }
